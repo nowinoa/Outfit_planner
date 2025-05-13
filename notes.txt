@@ -1,0 +1,3 @@
+navbar creation
+navbar style added
+add onclick router actions

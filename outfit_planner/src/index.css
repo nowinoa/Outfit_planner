@@ -3,6 +3,7 @@
   --black: #000000;
   --dark-green: #253439;
   --dark-brown: #423E3A;
+  --brown: #665E57;
   --grey: #7C898B;
   --off-white: #F6F4F1;
   --white: #FFFFFF;
@@ -15,7 +16,7 @@
 /* Apply fonts to base elements */
 body {
   font-family: var(--font-sans);
-  background-color: var(--off-white);
+  background-color: var(--dark-green);
   color: var(--dark-brown);
   margin: 0;
 }

@@ -1,0 +1,22 @@
+.card {
+  background-color: var(--off-white);
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center; /* vertical center */
+}
+
+.card-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-image {
+  max-width: 20rem;
+  width: 100%;
+  height: auto;
+  display: block;
+}

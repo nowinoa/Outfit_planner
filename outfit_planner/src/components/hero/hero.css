@@ -1,0 +1,5 @@
+.hero {
+    background-color: var(--dark-brown);
+    width: 100%;
+    height: 300px;
+}

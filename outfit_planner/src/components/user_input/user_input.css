@@ -1,0 +1,57 @@
+.userinput-wrapper {
+  background-color: var(--dark-green);
+  width: 90%;
+  max-width: 48r;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  color: white;
+  font-family: var(--font-serif);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.userinput-wrapper p {
+  font-style: italic;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.userinput-wrapper input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-sizing: border-box;
+}
+
+.style-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.style-buttons button {
+  width: 8rem; /* same width for all */
+  padding: 1rem;
+  background-color: #808080;
+  color: var(--dark-green);
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  text-align: center;
+  font-family: var(--font-serif);
+}
+
+.generate-btn {
+  margin-top: 2rem;
+  background-color: white;
+  color: var(--dark-brown);
+  padding: 1.5rem 3rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-serif);
+  border-radius: 3rem;
+}

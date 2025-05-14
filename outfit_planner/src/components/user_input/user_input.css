@@ -33,7 +33,7 @@
 }
 
 .style-buttons button {
-  width: 8rem; /* same width for all */
+  width: 8rem;
   padding: 1rem;
   background-color: #808080;
   color: var(--dark-green);

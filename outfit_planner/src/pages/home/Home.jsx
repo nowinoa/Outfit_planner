@@ -9,7 +9,15 @@ const Home = () => {
     <>
       <Hero />
       <Userinput />
-      <Card />
+      <div className='result-pannel'>
+        <Card />
+        <Card />
+         <Card />
+      </div>
+      <div className='button-pannel'>
+        <button className='reset-btn'>reset</button>
+      </div>
+     
     </>
   );
 };

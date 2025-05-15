@@ -1,13 +1,16 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import the hook
 import './Navbar.css';
+import logo from '../../assets/logo.png';
 
 const Navbar = () => {
   const navigate = useNavigate(); // Initialize the hook
 
   return (
     <div className='navbar'>
-      <div className='logo'>Name</div>
+      <div className='logo'>
+        <img src={logo} alt="outfique" />
+      </div>
       <div className='nav-buttons'>
         <button className='home-btn nav-btn ' onClick={() => navigate('/')}>Home</button>
         <button className='closet-btn nav-btn' onClick={() => navigate('/closet')}>Wardrobe</button>

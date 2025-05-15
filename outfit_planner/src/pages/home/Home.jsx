@@ -10,12 +10,15 @@ const Home = () => {
       <Hero />
       <Userinput />
       <div className='result-pannel'>
-        <Card />
-        <Card />
-         <Card />
-      </div>
-      <div className='button-pannel'>
-        <button className='reset-btn'>reset</button>
+        <h2>Recommended Outfits</h2>
+        <div className='result-cards'>
+          <Card />
+          <Card />
+          <Card />
+        </div>
+        <button className='reset-btn'>Re-style</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore et doloribus modi corrupti commodi in distinctio impedit, dolores reprehenderit porro quisquam asperiores inventore quam nostrum excepturi libero assumenda dignissimos minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tenetur sint optio pariatur similique, molestias obcaecati, reiciendis voluptatibus totam autem impedit. Facilis, nisi! Nesciunt alias aliquid enim facilis tempore earum.</p>
+        
       </div>
      
     </>

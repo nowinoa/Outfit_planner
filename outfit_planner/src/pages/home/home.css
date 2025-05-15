@@ -4,11 +4,38 @@
     width: 100%;
 }
 
-
 .result-pannel {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--off-white);
-    width: 100%;
+    gap: 1rem;
+}
+.result-cards {
+    width: 90%;
+    gap: 2rem;
     display: flex;
     flex-direction: row;
-
+    justify-content: center;
+    color: var(--dark-green);
 }
+
+
+.result-pannel .reset-btn {
+  margin-top: 2rem;
+  background-color: var(--dark-green);
+  color: var(--white);
+  padding: 1rem 3.2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-serif);
+  border-radius: 3rem;
+}
+
+
+

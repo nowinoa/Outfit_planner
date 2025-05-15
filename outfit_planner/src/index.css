@@ -11,6 +11,10 @@
   /* fonts */
   --font-sans: 'Hammersmith One', sans-serif;
   --font-serif: 'Playfair Display', serif;
+
+  
+  /* font sizes */
+ 
 }
 
 
@@ -19,4 +23,20 @@ body {
   background-color: var(--dark-green);
   color: var(--dark-brown);
   margin: 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1rem;
 }

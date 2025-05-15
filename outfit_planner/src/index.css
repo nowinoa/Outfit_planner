@@ -2,24 +2,18 @@
   /* color palette */
   --black: #000000;
   --dark-green: #253439;
-  --dark-brown: #423e3a;
-  --brown: #665e57;
-  --grey: #7c898b;
-  --off-white: #f6f4f1;
-  --white: #ffffff;
+  --dark-brown: #423E3A;
+  --brown: #665E57;
+  --grey: #7C898B;
+  --off-white: #F6F4F1;
+  --white: #FFFFFF;
 
   /* fonts */
   --font-sans: 'Hammersmith One', sans-serif;
   --font-serif: 'Playfair Display', serif;
+ 
 }
 
-html,
-body {
-  height: auto;
-  min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
 
 body {
   font-family: var(--font-sans);

@@ -37,3 +37,12 @@ h3 {
 p {
   font-size: 1rem;
 }
+
+@media (max-width: 767px) {
+  h1 {
+  font-size: 1.7rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+}

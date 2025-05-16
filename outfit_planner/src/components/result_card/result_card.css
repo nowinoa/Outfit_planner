@@ -24,3 +24,14 @@
   transform: scale(0.98);
   pointer-events: none;
 }
+
+@media (max-width: 714px) {
+  .card-image {
+    max-width: 20rem ;
+  }
+}
+@media (max-width: 468px) {
+  .card-image {
+    max-width: 15rem ;
+  }
+}

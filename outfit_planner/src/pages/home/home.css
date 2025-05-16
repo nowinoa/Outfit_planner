@@ -39,8 +39,24 @@
 
 .result-pannel p {
     width: 90%;
+    text-align: center;
 }
 
 
 
-
+@media (min-width: 767px) {
+    
+}
+@media (max-width: 714px) {
+    .result-cards {
+        width: 100%;
+        gap: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .result-pannel p {
+        width: 95%;
+       
+    }
+}

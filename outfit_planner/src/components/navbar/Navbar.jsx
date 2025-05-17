@@ -6,11 +6,12 @@ import logo from '../../assets/logo.png';
 const Navbar = () => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activePath, setActivePath] = useState('/'); // default page
 
-  // Helper to handle both navigation and closing the menu
   const handleNavClick = (path) => {
-    navigate(path);
-    setMenuOpen(false);
+    setActivePath(path);     
+    setMenuOpen(false);      
+    navigate(path);          
   };
 
   return (
@@ -29,9 +30,29 @@ const Navbar = () => {
       </button>
 
       <div className={`nav-buttons ${menuOpen ? 'open' : ''}`}>
-        <button type="button" className="nav-btn" onClick={() => handleNavClick('/')}>Home</button>
-        <button type="button" className="nav-btn" onClick={() => handleNavClick('/closet')}>Wardrobe</button>
-        <button type="button" className="nav-btn active" onClick={() => handleNavClick('/outfits')}>Saved Outfits</button>
+        <button
+          type="button"
+          className={`nav-btn ${activePath === '/' ? 'active' : ''}`}
+          onClick={() => handleNavClick('/')}
+        >
+          Home
+        </button>
+
+        <button
+          type="button"
+          className={`nav-btn ${activePath === '/closet' ? 'active' : ''}`}
+          onClick={() => handleNavClick('/closet')}
+        >
+          Wardrobe
+        </button>
+
+        <button
+          type="button"
+          className={`nav-btn ${activePath === '/outfits' ? 'active' : ''}`}
+          onClick={() => handleNavClick('/outfits')}
+        >
+          Saved Outfits
+        </button>
       </div>
     </div>
   );

@@ -1,0 +1,84 @@
+/* wardrobe.css */
+
+.wardrobe-wrapper {
+  background-color: var(--dark-green);
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.wardrobe-header {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.add-image-btn {
+  color: white;
+  font-style: italic;
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-image-btn:hover {
+  background-color: var(--white);
+  color: var(--dark-green);
+}
+
+.wardrobe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.item-card {
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  padding: 0.5rem;
+}
+
+.item-card:hover {
+  transform: scale(1.05);
+}
+
+.item-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  display: block;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: red;
+}
+.drag-message {
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-family: var(--font-serif);
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}

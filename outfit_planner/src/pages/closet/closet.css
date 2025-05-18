@@ -1,5 +1,3 @@
-/* wardrobe.css */
-
 .wardrobe-wrapper {
   background-color: var(--dark-green);
   padding: 2rem;
@@ -51,6 +49,7 @@
   object-fit: contain;
   border-radius: 0.5rem;
   display: block;
+  
 }
 
 .delete-btn {

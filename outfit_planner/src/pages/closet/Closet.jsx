@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import ClothesWrapper from '../../components/clothes_wrapper/Clothes_wrapper';
 import './closet.css';
 
+// prompt : generate a clean picture of the following item, size of the picture: 1024 x 1536 px, background color: #F6F4F1;
+
 const Closet = () => {
   const [items, setItems] = useState([]);
 
@@ -25,7 +27,7 @@ const Closet = () => {
   };
 
   const handleDragOver = (e) => {
-    e.preventDefault(); // required to allow drop
+    e.preventDefault(); 
   };
 
   const handleDelete = (id) => {

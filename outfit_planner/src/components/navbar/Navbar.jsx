@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../../assets/logo.png';
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activePath, setActivePath] = useState('/'); // default page
 
   const handleNavClick = (path) => {
-    setActivePath(path);     
-    setMenuOpen(false);      
-    navigate(path);          
+    setMenuOpen(false);
+    navigate(path);
   };
 
   return (
@@ -32,7 +31,7 @@ const Navbar = () => {
       <div className={`nav-buttons ${menuOpen ? 'open' : ''}`}>
         <button
           type="button"
-          className={`nav-btn ${activePath === '/' ? 'active' : ''}`}
+          className={`nav-btn ${location.pathname === '/' ? 'active' : ''}`}
           onClick={() => handleNavClick('/')}
         >
           Home
@@ -40,7 +39,7 @@ const Navbar = () => {
 
         <button
           type="button"
-          className={`nav-btn ${activePath === '/closet' ? 'active' : ''}`}
+          className={`nav-btn ${location.pathname === '/closet' ? 'active' : ''}`}
           onClick={() => handleNavClick('/closet')}
         >
           Wardrobe
@@ -48,7 +47,7 @@ const Navbar = () => {
 
         <button
           type="button"
-          className={`nav-btn ${activePath === '/outfits' ? 'active' : ''}`}
+          className={`nav-btn ${location.pathname === '/outfits' ? 'active' : ''}`}
           onClick={() => handleNavClick('/outfits')}
         >
           Saved Outfits

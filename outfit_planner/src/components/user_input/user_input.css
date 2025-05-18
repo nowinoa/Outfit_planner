@@ -1,3 +1,15 @@
+/* 1. add media queries to make the pannel responsive 
+   you can check other components css for template
+2. make style buttons responsive 
+3. add hover effect to all buttons 
+4. play with the focus property on input if you want to add effect
+
+! in my opinion inputs look fine already
+! in the future we will need to change the wrapper div 
+  to a form element instead of div, to submit the user 
+  options to the api  */
+
+
 .userinput-wrapper {
   background-color: var(--dark-green);
   width: 90%;

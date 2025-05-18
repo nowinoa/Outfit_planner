@@ -43,10 +43,8 @@
 }
 
 
+ 
 
-@media (min-width: 767px) {
-    
-}
 @media (max-width: 714px) {
     .result-cards {
         width: 100%;
@@ -58,5 +56,9 @@
     .result-pannel p {
         width: 95%;
        
+    }
+    .result-pannel .reset-btn {
+        font-size: 1rem;
+        
     }
 }

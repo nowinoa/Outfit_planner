@@ -48,7 +48,7 @@
   background-color: var(--dark-brown);
   color: var(--white);
 }
-/* Spinner styles */
+/* Spinner styles
 .spinner {
   border: 4px solid rgba(255, 255, 255, 0.2);
   border-top: 4px solid white;
@@ -63,7 +63,7 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 @media (max-width: 768px) {
 
@@ -73,7 +73,7 @@
 
   .nav-buttons {
     display: none;
-    position: fixed; 
+    position: absolute; 
     top: 6rem; 
     left: 0;
     width: 100%;

@@ -1,11 +1,63 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import countriesCities from 'countries-cities';
 import './user_input.css';
 
 const Userinput = () => {
+  const [countries, setCountries] = useState([]);
+  const [selectedCountry, setSelectedCountry] = useState('');
+  const [cities, setCities] = useState([]);
+  const [selectedCity, setSelectedCity] = useState('');
+  const [selectedStyle, setSelectedStyle] = useState('');
+
+  useEffect(() => {
+    const countryList = countriesCities.getCountries();
+    setCountries(countryList); // already sorted alphabetically
+  }, []);
+
+  const handleCountryChange = (e) => {
+    const country = e.target.value;
+    setSelectedCountry(country);
+
+    const cityList = countriesCities.getCities(country);
+    const sortedCities = (cityList || []).sort((a, b) => a.localeCompare(b));
+
+    setCities(sortedCities);
+    setSelectedCity('');
+  };
+
+  const handleStyleClick = (style) => {
+    setSelectedStyle(style);
+  };
+
   return (
     <div className="userinput-wrapper">
       <p>Where are you located?</p>
-      <input type="text" />
+      <select className="dropdown" value={selectedCountry} onChange={handleCountryChange}>
+        <option value="">Select country...</option>
+        {countries.map((country, idx) => (
+          <option key={idx} value={country}>
+            {country}
+          </option>
+        ))}
+      </select>
+
+      {selectedCountry && (
+        <>
+          <p>Choose your city</p>
+          <select
+            className="dropdown"
+            value={selectedCity}
+            onChange={(e) => setSelectedCity(e.target.value)}
+          >
+            <option value="">Select city</option>
+            {cities.map((city, idx) => (
+              <option key={idx} value={city}>
+                {city}
+              </option>
+            ))}
+          </select>
+        </>
+      )}
 
       <p>What's the dress code?</p>
       <select className="dropdown">
@@ -19,10 +71,15 @@ const Userinput = () => {
 
       <p>What's your style vibe</p>
       <div className="style-buttons">
-        <button>Minimalist</button>
-        <button>Trendy</button>
-        <button>Cozy</button>
-        <button>Edgy</button>
+        {['Minimalist', 'Trendy', 'Cozy', 'Edgy'].map((style) => (
+          <button
+            key={style}
+            className={selectedStyle === style ? 'active' : ''}
+            onClick={() => handleStyleClick(style)}
+          >
+            {style}
+          </button>
+        ))}
       </div>
 
       <button className="generate-btn">Generate Outfit</button>

@@ -1,7 +1,7 @@
 .userinput-wrapper {
   background-color: var(--dark-green);
   width: 90%;
-  max-width: 48r;
+  max-width: 48rem;
   margin: 0 auto;
   padding: 3rem 2rem;
   color: white;
@@ -12,11 +12,11 @@
 
 .userinput-wrapper p {
   font-style: italic;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin: 2rem 0 1rem;
 }
 
-.userinput-wrapper input {
+.userinput-wrapper input,
+.dropdown {
   width: 100%;
   max-width: 40rem;
   margin: 0 auto;
@@ -26,6 +26,13 @@
   border-radius: 0.5rem;
   border: none;
   box-sizing: border-box;
+  font-family: var(--font-serif);
+}
+
+.dropdown {
+  appearance: none;
+  background-color: white;
+  color: var(--dark-green);
 }
 
 .style-buttons {
@@ -43,13 +50,16 @@
   border: none;
   border-radius: 2rem;
   cursor: pointer;
-  text-align: center;
   font-family: var(--font-serif);
+}
+
+.style-buttons button:focus {
+  background-color: white;
 }
 
 .generate-btn {
   margin-top: 2rem;
-  background-color: white;
+  background-color: var(--off-white);
   color: var(--dark-brown);
   padding: 1.5rem 3rem;
   font-weight: bold;

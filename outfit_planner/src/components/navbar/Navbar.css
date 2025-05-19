@@ -66,15 +66,14 @@
 } */
 
 @media (max-width: 768px) {
-
   .burger {
     display: block;
   }
 
   .nav-buttons {
     display: none;
-    position: absolute; 
-    top: 6rem; 
+    position: absolute;
+    top: 6rem;
     left: 0;
     width: 100%;
     background-color: rgba(34, 34, 34, 0.9);
@@ -91,21 +90,16 @@
     color: white;
     padding: 1rem 0;
     background: none;
-    font-size: 1.2rem; 
-     border-radius: 0px;
+    font-size: 1.2rem;
+    border-radius: 0px;
   }
 
   .nav-btn.active {
     background-color: transparent;
   }
 
-
   .nav-btn:hover {
     font-size: 1.5rem;
     text-shadow: 1px 1px 1px var(--grey);
   }
-
 }
-
-
-

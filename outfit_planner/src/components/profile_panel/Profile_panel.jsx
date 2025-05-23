@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './profilepanel.css';
+import './Profile_panel.css';
 
 const ProfilePanel = () => {
   const [profileImage, setProfileImage] = useState(null);

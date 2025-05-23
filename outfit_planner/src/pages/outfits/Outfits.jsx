@@ -1,11 +1,11 @@
 // Outfits.jsx
 import React from 'react';
-import Profile from './Profile'; // ✅ assuming Profile.jsx is in the same folder
+import ProfilePanel from '../../components/profile_panel/Profile_panel';
 
 const Outfits = () => {
   return (
     <div>
-      <Profile />
+      <ProfilePanel />
     </div>
   );
 };

@@ -57,17 +57,29 @@
 .style-buttons button {
   width: 8rem;
   padding: 1rem;
-  background-color: #808080;
+  background-color: var(--buttons);
   color: var(--dark-green);
   border: none;
   border-radius: 2rem;
   cursor: pointer;
   font-family: var(--font-serif);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  transition: 
+    transform 0.3s ease,
+    /* box-shadow 0.3s ease, */
+    letter-spacing 0.3s ease,
+    backdrop-filter 0.3s ease;
 }
 
-/* .style-buttons button:focus {
-  background-color: white;
-} */
+.style-buttons button:hover {
+  transform: scale(1.06);
+  /* box-shadow: 
+    inset 0 0 0 1px rgba(255, 255, 255, 0.2),
+    0 8px 18px rgba(255, 255, 255, 0.15); */
+  letter-spacing: 2px;
+  backdrop-filter: blur(3px);
+}
 .style-buttons .active {
   background-color: white;
 }

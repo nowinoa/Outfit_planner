@@ -26,7 +26,11 @@ const Userinput = () => {
   };
 
   const handleStyleClick = (style) => {
-    setSelectedStyle(style);
+    if (selectedStyle === style) {
+      setSelectedStyle(''); // unselect if already selected
+    } else {
+      setSelectedStyle(style); // select new style
+    }
   };
 
   return (

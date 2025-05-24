@@ -8,6 +8,7 @@ const Userinput = () => {
   const [cities, setCities] = useState([]);
   const [selectedCity, setSelectedCity] = useState('');
   const [selectedStyle, setSelectedStyle] = useState('');
+  const [isClicked, setIsClicked] = useState(false);
 
   useEffect(() => {
     const countryList = countriesCities.getCountries();
@@ -31,6 +32,21 @@ const Userinput = () => {
     } else {
       setSelectedStyle(style); // select new style
     }
+  };
+
+  const handleGenerateClick = () => {
+    setIsClicked(true);
+
+    // Clear inputs
+    setSelectedCountry('');
+    setCities([]);
+    setSelectedCity('');
+    setSelectedStyle('');
+
+    // Reset click animation state
+    setTimeout(() => {
+      setIsClicked(false);
+    }, 200);
   };
 
   return (
@@ -86,7 +102,12 @@ const Userinput = () => {
         ))}
       </div>
 
-      <button className="generate-btn">Generate Outfit</button>
+      <button
+        className={`generate-btn ${isClicked ? 'clicked' : ''}`}
+        onClick={handleGenerateClick}
+      >
+        Generate Outfit
+      </button>
     </div>
   );
 };

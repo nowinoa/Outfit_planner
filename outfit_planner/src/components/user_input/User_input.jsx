@@ -9,6 +9,7 @@ const Userinput = () => {
   const [selectedCity, setSelectedCity] = useState('');
   const [selectedStyle, setSelectedStyle] = useState('');
   const [isClicked, setIsClicked] = useState(false);
+  const [selectedDressCode, setSelectedDressCode] = useState(false);
 
   useEffect(() => {
     const countryList = countriesCities.getCountries();
@@ -42,6 +43,8 @@ const Userinput = () => {
     setCities([]);
     setSelectedCity('');
     setSelectedStyle('');
+    setSelectedDressCode('');
+
 
     // Reset click animation state
     setTimeout(() => {
@@ -80,7 +83,7 @@ const Userinput = () => {
       )}
 
       <p>What's the dress code?</p>
-      <select className="dropdown">
+      <select className="dropdown" value={selectedDressCode} onChange={(e) => setSelectedDressCode(e.target.value)}>
         <option value="">Select...</option>
         <option value="casual">Casual</option>
         <option value="smart-casual">Smart Casual</option>

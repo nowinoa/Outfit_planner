@@ -58,7 +58,6 @@
   background-color: var(--buttons);
   color: white;
   border-radius: 999px;
-  /* transition: background 0.3s ease; */
 }
 
 .remove-btn {

@@ -1,0 +1,35 @@
+.outfit-container {
+  background-color: var(--grey);
+  border-radius: 3rem 3rem 2rem 2rem;
+  width: 80%;
+  padding-bottom: 1rem;
+  margin: 2rem auto;
+}
+
+.outfit-title {
+  background-color: var(--off-white);
+  padding: 0.1rem;
+  border-radius: 3rem;
+  text-align: center;
+  font-family: var(--font-serif);
+  margin-bottom: 1rem;
+}
+
+.outfit-clothes {
+  margin: 0 2.5rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  padding: 0 0.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  padding: 0.5rem;
+}
+
+.outfit-image {
+  width: 153.5px;
+  height: 230.25px;
+  border-radius: 0.5rem;
+  background-color: var(--off-white);
+}

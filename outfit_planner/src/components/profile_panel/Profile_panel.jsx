@@ -3,7 +3,7 @@ import './Profile_panel.css';
 
 const ProfilePanel = () => {
   const [profileImage, setProfileImage] = useState(null);
-  const username = 'USERNAME'; // Replace with dynamic username later
+  const username = 'Ainhoa Prada'; 
 
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
